@@ -1,0 +1,21 @@
+{
+  "news": [
+    {
+      "title": "🔍 Nowość: Google Gemini 1.5 dostępne za darmo – sprawdź, co potrafi!",
+      "url": "https://example.com/google-gemini-1-5"
+    },
+    {
+      "title": "🧠 Claude 3 Sonnet radzi sobie z długimi dokumentami PDF.",
+      "url": "https://example.com/claude-3-sonnet"
+    },
+    {
+      "title": "📸 Midjourney V6 z nowym stylem realistycznym!",
+      "url": "https://example.com/midjourney-v6"
+    },
+    {
+      "title": "🤖 OpenAI testuje funkcje agenta osobistego w GPT-4!",
+      "url": "https://example.com/openai-gpt4-agent"
+    }
+  ]
+}
+

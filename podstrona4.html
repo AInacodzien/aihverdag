@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon_32x32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <title>AI for eldre - Artikler</title>
+  <link rel="icon" type="image/png" href="favicon_32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav aria-label="Hovedmeny">
+    <button class="burger" aria-label="Mobilmeny">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Hjem</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#eksempler">Eksempler</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </div>
+  </nav>
+
+  <header class="ai-eldre-header">
+    <h1>AI for eldre</h1>
+    <p>Oppdag hvordan AI kan gi trygghet, støtte og påminnelser for eldre</p>
+  </header>
+
+  <main class="container">
+    <ul class="article-list">
+      <li class="article-item">
+        <a href="article1.html">Kommer snart</a>
+      </li>
+      <li class="article-item">
+        <a href="article2.html">Kommer snart</a>
+      </li>
+      <li class="article-item">
+        <a href="article3.html">Kommer snart</a>
+      </li>
+    </ul>
+    <a href="index.html" class="back-link">Tilbake til hjemmesiden</a>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#eksempler">Eksempler</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <img src="edunso(14).png" alt="Kunstig intelligens i hverdagen logo" class="footer-logo">
+    <p>&copy; 2025 AI for eldre – Alle rettigheter forbeholdt.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links a');
+      if(burger && navLinks) {
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+        links.forEach(link => link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        }));
+      }
+    });
+  </script>
+</body>
+</html>

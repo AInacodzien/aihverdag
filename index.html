@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <link rel="stylesheet" href="style_TICKER_FIXED.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI i hverdagen – forståelig og nyttig blogg</title>
+  <meta name="description" content="En blogg om hvordan du kan bruke kunstig intelligens i hverdagen – enkelt forklart, med praktiske eksempler og verktøy.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI i hverdagen – forståelig og nyttig blogg">
+  <meta property="og:description" content="Oppdag hvordan du kan bruke kunstig intelligens i det daglige. Enkelt forklart, steg for steg.">
+  <meta property="og:image" content="https://aihverdag.no/assets/Logo.png">
+  <meta property="og:url" content="https://aihverdag.no">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI i hverdagen – forståelig og nyttig blogg">
+  <meta name="twitter:description" content="Praktiske eksempler og verktøy for deg som vil forstå og bruke kunstig intelligens i hverdagen.">
+  <meta name="twitter:image" content="https://aihverdag.no/assets/Logo.png">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon_32x32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Fonts + Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav aria-label="Hovedmeny">
+    <button class="burger" aria-label="Mobilmeny">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links">
+      <a href="#hjem">Hjem</a>
+      <a href="blog.html">Blog</a>
+      <a href="#eksempler">Eksempler</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </nav>
+  
+  <header id="hjem" class="home-header">
+    <img src="Logo.png" alt="AI til hverdags logo" style="max-width: 350px; width: 100%; height: auto; margin-bottom: 0;">
+    <p style="margin-top: 0.1rem;">Utforsk potensialet til kunstig intelligens i hverdagen – praktiske tips, trender og eksempler.</p>
+  </header>
+  
+  <!-- Ticker z dynamicznymi newsami -->
+  <div class="ticker">
+    <div class="ticker__wrap">
+      <!-- Wiadomości zostaną załadowane przez JavaScript z pliku news.json -->
+    </div>
+  </div>
+  
+  <section id="blog" class="container section-alt" style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <img src="edunso(17).png" alt="AI-hånd" style="flex: 1 1 300px; max-width: 400px; border-radius: 10px;">
+    <div style="flex: 1 1 300px; max-width: 500px;">
+      <h2 style="color: var(--accent-color); margin-bottom: 1rem;">Velkommen til AI-bloggen</h2>
+      <p>Her finner du inspirasjon, verktøy og guider for hvordan du kan bruke kunstig intelligens i hverdagen. Enten du er nybegynner eller erfaren, har vi noe for deg.</p>
+    </div>
+  </section>
+  
+  <main class="container" id="eksempler">
+    <h2>Praktiske eksempler på bruk av AI</h2>
+    <div class="box-container">
+      <a href="podstrona1.html">
+        <article class="box">
+          <img src="ai-hjemmet.png" alt="AI i hjemmet">
+          <h3>AI i hjemmet</h3>
+          <p>Se hvordan kunstig intelligens kan gjøre hverdagen din mer komfortabel, effektiv og trygg – fra smarte assistenter til energistyring.</p>
+        </article>
+      </a>
+      <a href="podstrona2.html">
+        <article class="box">
+          <img src="ai-verktoy.png" alt="AI-verktøy">
+          <h3>AI-verktøy</h3>
+          <p>Utforsk gratis og betalte AI-verktøy som hjelper deg med tekst, bilder, video og produktivitet.</p>
+        </article>
+      </a>
+      <a href="podstrona3.html">
+        <article class="box">
+          <img src="ai-tips.png" alt="AI-tips og triks">
+          <h3>AI-tips og triks</h3>
+          <p>Lær smarte triks som gjør det lettere å bruke AI – uansett om du er nybegynner eller mer erfaren.</p>
+        </article>
+      </a>
+      <a href="podstrona4.html">
+        <article class="box">
+          <img src="ai-eldre.png" alt="AI for eldre">
+          <h3>AI for eldre</h3>
+          <p>Oppdag hvordan AI kan hjelpe eldre med påminnelser, samtaler og trygghet i hverdagen.</p>
+        </article>
+      </a>
+    </div>
+  </main>
+  
+  <section class="container newsletter-form">
+    <h2>Abonner på vårt nyhetsbrev</h2>
+    <p>Motta ukentlige oppdateringer om kunstig intelligens</p>
+    <form netlify>
+      <input type="email" class="newsletter-email" placeholder="Din e-post" required>
+
+      <button type="submit" class="cta-button">Abonner</button>
+    </form>
+  </section>
+  
+  <section class="container" id="kontakt">
+    <h2>Kontakt oss</h2>
+    <form class="contact-form" netlify>
+      <input type="email" placeholder="Din e-post" required>
+      <textarea placeholder="Din melding..." rows="4" required></textarea>
+      <button type="submit" class="cta-button">Send</button>
+    </form>
+  </section>
+  
+  <footer>
+    <div class="footer-inner">
+      <nav>
+        <a href="#hjem">Hjem</a>
+        <a href="blog.html">Blog</a>
+        <a href="#eksempler">Eksempler</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <img src="Logo.png" alt="Kunstig intelligens i hverdagen logo" class="footer-logo">
+        <p>&copy; 2025 Kunstig intelligens i hverdagen – Alle rettigheter reservert.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links a');
+      if (burger && navLinks) {
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+        links.forEach(link => link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        }));
+      }
+    });
+  </script>
+  
+   <script>
+  fetch('news.json')
+    .then(res => res.json())
+    .then(data => {
+      const wrap = document.querySelector('.ticker__wrap');
+      wrap.innerHTML = data.news
+        .map(item =>
+          `<a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>`
+        )
+        .join('');
+    })
+    .catch(err => console.error('Błąd ładowania newsów:', err));
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI i hverdagen – forståelig og nyttig blogg</title>
+  <meta name="description" content="En blogg om hvordan du kan bruke kunstig intelligens i hverdagen – enkelt forklart, med praktiske eksempler og verktøy.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI i hverdagen – forståelig og nyttig blogg">
+  <meta property="og:description" content="Oppdag hvordan du kan bruke kunstig intelligens i det daglige. Enkelt forklart, steg for steg.">
+  <meta property="og:image" content="https://aihverdag.no/assets/Logo.png">
+  <meta property="og:url" content="https://aihverdag.no">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI i hverdagen – forståelig og nyttig blogg">
+  <meta name="twitter:description" content="Praktiske eksempler og verktøy for deg som vil forstå og bruke kunstig intelligens i hverdagen.">
+  <meta name="twitter:image" content="https://aihverdag.no/assets/Logo.png">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon_32x32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Fonts + Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav aria-label="Hovedmeny">
+    <button class="burger" aria-label="Mobilmeny">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Hjem</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#eksempler">Eksempler</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </div>
+  </nav>
+
+  <header class="ai-hjemmet-header">
+    <h1>AI i hjemmet</h1>
+    <p>Se hvordan kunstig intelligens kan gjøre hverdagen din mer komfortabel, effektiv og trygg</p>
+  </header>
+
+  <main class="container">
+    <ul class="article-list">
+      <li class="article-item">
+        <a href="article1.html">Kommer snart</a>
+      </li>
+      <li class="article-item">
+        <a href="article2.html">Kommer snart</a>
+      </li>
+      <li class="article-item">
+        <a href="article3.html">Kommer snart</a>
+      </li>
+    </ul>
+    <a href="index.html" class="back-link">Tilbake til hjemmesiden</a>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#eksempler">Eksempler</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <img src="edunso(14).png" alt="Kunstig intelligens i hverdagen logo" class="footer-logo">
+    <p>&copy; 2025 AI i hjemmet – Alle rettigheter forbeholdt.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links a');
+      if(burger && navLinks) {
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+        links.forEach(link => link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        }));
+      }
+    });
+  </script>
+</body>
+</html>
