@@ -1,170 +1,240 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <link rel="stylesheet" href="style_TICKER_FIXED.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>AI i hverdagen – forståelig og nyttig blogg</title>
-  <meta name="description" content="En blogg om hvordan du kan bruke kunstig intelligens i hverdagen – enkelt forklart, med praktiske eksempler og verktøy.">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="AI i hverdagen – forståelig og nyttig blogg">
-  <meta property="og:description" content="Oppdag hvordan du kan bruke kunstig intelligens i det daglige. Enkelt forklart, steg for steg.">
-  <meta property="og:image" content="https://aihverdag.no/assets/Logo.png">
-  <meta property="og:url" content="https://aihverdag.no">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI i hverdagen – forståelig og nyttig blogg">
-  <meta name="twitter:description" content="Praktiske eksempler og verktøy for deg som vil forstå og bruke kunstig intelligens i hverdagen.">
-  <meta name="twitter:image" content="https://aihverdag.no/assets/Logo.png">
-
-  <!-- Favicons -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon_32x32.png" type="image/png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/manifest.json">
-
-  <!-- Fonts + Styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIhverdag.no - Din guide til kunstig intelligens i hverdagen. Oppdag hvordan AI kan forbedre din hverdag med våre verktøy og ressurser.">
+    <meta property="og:title" content="AIhverdag.no - AI i din hverdag">
+    <meta property="og:description" content="Oppdag hvordan kunstig intelligens kan forbedre din hverdag med våre verktøy og ressurser.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aihverdag.no">
+    <meta property="og:image" content="https://aihverdag.no/images/aihverdag-logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://aihverdag.no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0d1117',
+                        accent: '#00ffcc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <title>AIhverdag.no - AI i din hverdag</title>
+    <base target="_self">
 </head>
-<body>
-  <nav aria-label="Hovedmeny">
-    <button class="burger" aria-label="Mobilmeny">
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="nav-links">
-      <a href="#hjem">Hjem</a>
-      <a href="blog.html">Blog</a>
-      <a href="#eksempler">Eksempler</a>
-      <a href="#kontakt">Kontakt</a>
-    </div>
-  </nav>
-  
-  <header id="hjem" class="home-header">
-    <img src="Logo.png" alt="AI til hverdags logo" style="max-width: 350px; width: 100%; height: auto; margin-bottom: 0;">
-    <p style="margin-top: 0.1rem;">Utforsk potensialet til kunstig intelligens i hverdagen – praktiske tips, trender og eksempler.</p>
-  </header>
-  
-  <!-- Ticker z dynamicznymi newsami -->
-  <div class="ticker">
-    <div class="ticker__wrap">
-      <!-- Wiadomości zostaną załadowane przez JavaScript z pliku news.json -->
-    </div>
-  </div>
-  
-  <section id="blog" class="container section-alt" style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <img src="edunso(17).png" alt="AI-hånd" style="flex: 1 1 300px; max-width: 400px; border-radius: 10px;">
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <h2 style="color: var(--accent-color); margin-bottom: 1rem;">Velkommen til AI-bloggen</h2>
-      <p>Her finner du inspirasjon, verktøy og guider for hvordan du kan bruke kunstig intelligens i hverdagen. Enten du er nybegynner eller erfaren, har vi noe for deg.</p>
-    </div>
-  </section>
-  
-  <main class="container" id="eksempler">
-    <h2>Praktiske eksempler på bruk av AI</h2>
-    <div class="box-container">
-      <a href="podstrona1.html">
-        <article class="box">
-          <img src="ai-hjemmet.png" alt="AI i hjemmet">
-          <h3>AI i hjemmet</h3>
-          <p>Se hvordan kunstig intelligens kan gjøre hverdagen din mer komfortabel, effektiv og trygg – fra smarte assistenter til energistyring.</p>
-        </article>
-      </a>
-      <a href="podstrona2.html">
-        <article class="box">
-          <img src="ai-verktoy.png" alt="AI-verktøy">
-          <h3>AI-verktøy</h3>
-          <p>Utforsk gratis og betalte AI-verktøy som hjelper deg med tekst, bilder, video og produktivitet.</p>
-        </article>
-      </a>
-      <a href="podstrona3.html">
-        <article class="box">
-          <img src="ai-tips.png" alt="AI-tips og triks">
-          <h3>AI-tips og triks</h3>
-          <p>Lær smarte triks som gjør det lettere å bruke AI – uansett om du er nybegynner eller mer erfaren.</p>
-        </article>
-      </a>
-      <a href="podstrona4.html">
-        <article class="box">
-          <img src="ai-eldre.png" alt="AI for eldre">
-          <h3>AI for eldre</h3>
-          <p>Oppdag hvordan AI kan hjelpe eldre med påminnelser, samtaler og trygghet i hverdagen.</p>
-        </article>
-      </a>
-    </div>
-  </main>
-  
-  <section class="container newsletter-form">
-    <h2>Abonner på vårt nyhetsbrev</h2>
-    <p>Motta ukentlige oppdateringer om kunstig intelligens</p>
-    <form netlify>
-      <input type="email" class="newsletter-email" placeholder="Din e-post" required>
+<body class="bg-dark text-white font-sans">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-dark/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0">
+                        <img src="https://aihverdag.no/images/aihverdag-logo.webp" alt="AIhverdag logo" class="h-8 w-auto">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-accent px-3 py-2 rounded-md text-sm font-medium">Hjem</a>
+                        <a href="#" class="text-gray-300 hover:text-accent px-3 py-2 rounded-md text-sm font-medium">AI Verktøy</a>
+                        <a href="#" class="text-gray-300 hover:text-accent px-3 py-2 rounded-md text-sm font-medium">AI Hverdagen</a>
+                        <a href="#" class="text-gray-300 hover:text-accent px-3 py-2 rounded-md text-sm font-medium">Kontakt</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-300 hover:text-accent focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark/95">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Hjem</a>
+                <a href="#" class="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">AI Verktøy</a>
+                <a href="#" class="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">AI Hverdagen</a>
+                <a href="#" class="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Kontakt</a>
+            </div>
+        </div>
+    </nav>
 
-      <button type="submit" class="cta-button">Abonner</button>
-    </form>
-  </section>
-  
-  <section class="container" id="kontakt">
-    <h2>Kontakt oss</h2>
-    <form class="contact-form" netlify>
-      <input type="email" placeholder="Din e-post" required>
-      <textarea placeholder="Din melding..." rows="4" required></textarea>
-      <button type="submit" class="cta-button">Send</button>
-    </form>
-  </section>
-  
-  <footer>
-    <div class="footer-inner">
-      <nav>
-        <a href="#hjem">Hjem</a>
-        <a href="blog.html">Blog</a>
-        <a href="#eksempler">Eksempler</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
-      <div class="social-icons">
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-      </div>
-      <div class="footer-bottom">
-        <img src="Logo.png" alt="Kunstig intelligens i hverdagen logo" class="footer-logo">
-        <p>&copy; 2025 Kunstig intelligens i hverdagen – Alle rettigheter reservert.</p>
-      </div>
+    <!-- Hero Section -->
+    <div class="relative h-screen">
+        <div class="absolute inset-0 bg-black/50">
+            <img src="https://aihverdag.no/images/kvinne-og-humanoid-robot.webp" alt="Kvinne og humanoid robot" class="w-full h-full object-cover">
+        </div>
+        <div class="relative h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+            <img src="https://aihverdag.no/images/aihverdag-logo.webp" alt="AIhverdag logo" class="w-64 md:w-80 mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-white mb-4">Kunstig intelligens i din hverdag</h1>
+            <p class="text-lg md:text-xl text-center text-gray-300 max-w-3xl">Oppdag hvordan AI kan forbedre din hverdag med våre verktøy og ressurser</p>
+        </div>
     </div>
-  </footer>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const burger = document.querySelector('.burger');
-      const navLinks = document.querySelector('.nav-links');
-      const links = document.querySelectorAll('.nav-links a');
-      if (burger && navLinks) {
-        burger.addEventListener('click', () => {
-          navLinks.classList.toggle('active');
+
+    <!-- Intro Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-accent mb-6">Velkommen til AIhverdag.no</h2>
+            <p class="text-lg text-gray-300 mb-6">Vår blogg er dedikert til å hjelpe deg med å forstå og bruke kunstig intelligens i din daglige rutine. Uansett om du er nybegynner eller erfaren bruker, har vi ressurser for deg.</p>
+            <p class="text-lg text-gray-300">Utforsk våre artikler, veiledninger og verktøy for å få mest mulig ut av AI i din hverdag.</p>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-accent mb-12">Våre AI-temaer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI i hjemmet</h3>
+                    <p class="text-gray-300 mb-4">Oppdag hvordan smarte hjem og AI-assistenter kan forenkle din daglige rutine og gjøre hjemmet ditt mer effektivt.</p>
+                    <a href="#" class="text-accent hover:text-white font-medium inline-flex items-center">Les mer <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI-verktøy</h3>
+                    <p class="text-gray-300 mb-4">Utforsk de nyeste AI-verktøyene som kan hjelpe deg med alt fra produktivitet til kreativitet i din hverdag.</p>
+                    <a href="#" class="text-accent hover:text-white font-medium inline-flex items-center">Les mer <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI for eldre</h3>
+                    <p class="text-gray-300 mb-4">Lær hvordan AI-teknologi kan støtte eldre i deres hverdag, fra helseovervåkning til sosial interaksjon.</p>
+                    <a href="#" class="text-accent hover:text-white font-medium inline-flex items-center">Les mer <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI i skolen</h3>
+                    <p class="text-gray-300 mb-4">Utforsk hvordan AI kan revolusjonere læring og undervisning, både for elever og lærere.</p>
+                    <a href="#" class="text-accent hover:text-white font-medium inline-flex items-center">Les mer <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI og planlegging</h3>
+                    <p class="text-gray-300 mb-4">Oppdag hvordan AI kan hjelpe deg med å organisere din tid, planlegge måltider og optimalisere din hverdag.</p>
+                    <a href="#" class="text-accent hover:text-white font-medium inline-flex items-center">Les mer <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-accent mb-8">Om oss</h2>
+            <div class="space-y-6 text-left">
+                <p class="text-lg text-gray-300">AIhverdag.no er et ikke-kommersielt prosjekt drevet av en gruppe AI-entusiaster som ønsker å gjøre kunstig intelligens tilgjengelig for alle.</p>
+                <p class="text-lg text-gray-300">Vårt mål er å gi nøytrale, pålitelige og praktiske råd om hvordan AI kan implementeres i hverdagen uten å miste det menneskelige perspektivet.</p>
+                <p class="text-lg text-gray-300">Vi tror på åpen kunnskap og deler alle våre ressurser gratis, støttet av frivillige bidragsytere og samfunnsengasjement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://aihverdag.no/images/newsletter.webp" alt="Nyhetsbrev om AI" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-accent mb-4">Meld deg på vårt nyhetsbrev</h2>
+                    <p class="text-lg text-gray-300 mb-6">Få de siste nyhetene om AI i hverdagen, eksklusive tips og anbefalinger rett i innboksen din.</p>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="email" class="sr-only">E-postadresse</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-accent focus:ring-2 focus:ring-accent focus:outline-none" placeholder="Din e-postadresse">
+                        </div>
+                        <button type="submit" class="w-full bg-accent hover:bg-accent/90 text-dark font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                            Meld meg på <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                    <p class="text-sm text-gray-400 mt-4">Vi respekterer ditt personvern. Du kan når som helst avmelde deg.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="https://aihverdag.no/images/aihverdag-logo.webp" alt="AIhverdag logo" class="h-10 w-auto mb-4">
+                    <p class="text-gray-400">Din guide til kunstig intelligens i hverdagen.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Hurtiglenker</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition duration-300">Hjem</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition duration-300">AI Verktøy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition duration-300">AI Hverdagen</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition duration-300">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Følg oss</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent text-xl transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-xl transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-xl transition duration-300"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 AIhverdag.no. Alle rettigheter reservert.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
         });
-        links.forEach(link => link.addEventListener('click', () => {
-          navLinks.classList.remove('active');
-        }));
-      }
-    });
-  </script>
-  
-   <script>
-  fetch('news.json')
-    .then(res => res.json())
-    .then(data => {
-      const wrap = document.querySelector('.ticker__wrap');
-      wrap.innerHTML = data.news
-        .map(item =>
-          `<a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>`
-        )
-        .join('');
-    })
-    .catch(err => console.error('Błąd ładowania newsów:', err));
-</script>
+
+        // Prevent default anchor behavior
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
